@@ -22,5 +22,3 @@ A simple web application for **nonlinear optimization** and visualization
 - **BFGS**
 - **Genetic**
 - **Monte Carlo**
-
-# Nonlinear-Optimization
