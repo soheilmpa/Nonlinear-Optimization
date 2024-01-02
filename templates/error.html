@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+        <title>Error</title>
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .card {
+                text-align: center;
+            }
+
+            div {
+                margin-top: 35px;
+            }
+
+            a {
+            text-decoration: none;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="card">
+            <label for="textInput">Something went wrong</label>
+            <br>
+            <div>
+                <a href="..">Back to menu</a>
+            </div>
+            <br>
+        </div>
+    </body>
+</html>

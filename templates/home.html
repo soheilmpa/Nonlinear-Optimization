@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+        <title>Your Page Title</title>
+    </head>
+
+    <body>
+        <div class="card">
+
+            <form action="{{ url_for('calculate') }}" method="post">
+                <label for="textInput">Target Function :</label>
+                <div class="input-group">
+                    <input type="text" id="textInput" name="textInput" placeholder="Enter  target  function  here">
+                </div>
+
+                <div class="checkbox-group" id="checkbox">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="checkbox0" name="checkbox0" value="Gradient Descent (Constant)">
+                        <label for="checkbox0">Gradient Descent (Constant)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="checkbox6" name="checkbox6" value="Gradient Descent (line search)">
+                        <label for="checkbox6">Gradient Descent (line search)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="checkbox1" name="checkbox1" value="Gradient Descent (backtracking)">
+                        <label for="checkbox1">Gradient Descent (backtracking)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="checkbox2" name="checkbox2" value="Newton">
+                        <label for="checkbox2">Newton</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="checkbox3" name="checkbox3" value="BFGS">
+                        <label for="checkbox3">BFGS (Quasi-Newton)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="checkbox4" name="checkbox4" value="Genetic Algorithm">
+                        <label for="checkbox4">Genetic Algorithm</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="checkbox5" name="checkbox5" value="Monte Carlo">
+                        <label for="checkbox5">Monte Carlo</label>
+                    </div>
+                </div>
+
+                <button type="submit">Calculate</button>
+            </form>
+        </div>
+    </body>
+
+</html>
